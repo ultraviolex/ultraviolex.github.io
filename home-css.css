@@ -1,0 +1,44 @@
+body { 
+  background: url(home-bg3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h1 {
+	color: white;
+	font-size: 900%;
+	text-align: center;
+	margin-top: 100px;
+	line-height: 1;
+	font-family: 'Poiret One', cursive;
+	padding-bottom: 0px;
+	margin-bottom: 50px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 120%;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightskyblue;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: lightskyblue;
+  text-decoration: underline;
+}
