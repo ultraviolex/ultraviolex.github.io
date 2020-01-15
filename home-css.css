@@ -8,7 +8,7 @@ body {
 
 footer {
   color: white;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Muli', sans-serif;
   text-align: center;
   font-size: 70%;
   position: fixed;
@@ -31,7 +31,7 @@ a:link {
   color: white;
   text-decoration: none;
   font-size: 120%;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 /* visited link */
