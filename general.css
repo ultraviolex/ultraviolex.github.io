@@ -29,10 +29,11 @@ p {
   font-family: 'Muli', sans-serif;
   background: rgb(25, 25, 25,.75);
   padding:10px;
-  padding-top: 15px
-  line-height: 1.2;
+  padding-top: 15px;
+  line-height: 1.5;
 }
 
+/* link */
 a:link {
   color: white;
   text-decoration: underline;
@@ -57,4 +58,5 @@ a:active {
   color: lightskyblue;
   text-decoration: underline;
 }
+
 
