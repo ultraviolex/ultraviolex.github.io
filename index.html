@@ -1,30 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="home-css.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:200|Poiret+One&display=swap" rel="stylesheet">
-	<title>Violex Ming</title>
+	<link rel="stylesheet" href="index2.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<h1>Violex Ming</h1>
+<h2>Hello World.<br> My name is</h2>
+<h1>Violex Ming.</h1>
+<h3>Student and programmer.</h3>
 
-<p style="text-align: center;">
-	<a style="
-margin-right: 5%;" href="about-me.html">about me</a>
-<a style="
-margin-right: 5%;" href="courses.html">coursework</a>
-<a style="
-margin-right: 5%;" href="projects.html">projects</a>
+<p class = 'intro'>
+	I'm a fourth year student at the University of California, Berkeley majoring in Data Science.
+	<br>
+	I love software engineering, working out, and my hamster, Hamsterdam.
 </p>
 
-<footer>
-	<a href="https://www.linkedin.com/in/violex/"><img src='LinkedInLogo.png' alt = "LinkedIn" width="50" height = "50" style = "margin-bottom: 2%; margin-top: 5%; margin-right: 1%"></a>
-	<a href="https://github.com/ultraviolex"><img src='GitHubLogo.png' alt = "GitHub" width="50" height = "50" style = "margin-bottom: 2%; margin-top: 5%; margin-left: 1%"></a>
-</button>
-<footer>
-	Coded with HTML by Violex Ming
-</footer>
+<div class="parallax1">
+	<element class = "parallax_text">
+		<p>
+			&emsp;about me&emsp;
+		</p>
+	</element>
+</div>
+
+<p class = 'about-me'>
+	<img src="Headshot2.jpg" alt = "Violex Ming" width="320" height="370" style="float:left; margin-right: 3%;">
+	Hi! My name is Violex and I am a fourth year student majoring in Data Science at the University 
+	of California Berkeley. I am based out of the Bay Area and am originally from Houston, Texas. 
+	I didn't always plan on majoring in Data Science or doing anything close to tech; I entered 
+	Berkeley intending on leaving with a degree in biochemistry and then heading to medical school, 
+	but life doesn't always work out that way; turns out you won't make it very far in biochemistry 
+	if you hate chemistry. Luckily, Berkeley came out with a Data Science major my second year and 
+	I haven't looked back since. Although chemistry didn't come naturally to me, programming has and 
+	I'm excited to make a career from it. All in all, I'm incredibly thankful to have found an area 
+	of study that I not only understand but am passionate about as well. 
+	<br>
+	<br>
+	In my free time, you can find me working on personal projects, both art and tech, working out, 
+	cooking, and playing with my hamster. Please feel free to reach out if you have any questions 
+	and I hope you stay a bit longer to take a look around!
+</p>
+
+
+<div class="parallax2">
+	<element class = "parallax_text">
+		<p>
+			&emsp;experience&emsp;
+		</p>
+	</element>
+</div>
+
+<div class="tabs">
+	<div role="tablist" aria-label="Sample Tabs">
+	  	<button class = 'experience' role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+			Done Health
+		  </button>
+	  	<button class = 'experience' role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+			UC Berkeley
+		  </button>
+		<br>
+	</div>
+	<div role = 'tabpanel-main'>
+		<div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+			<h class = 'job-title'>Data Science/Growth Intern</h>
+			<h class = 'date'>07/2020 - 02/2021</h>
+			<ul class = 'experience-details'>
+				<li>Built and maintained data dashboard using Python to track and visualize 
+					ad spending, customer retention, and company growth</li>
+				<li>Wrote and automated numerous scripts for website scraping, data summarization, 
+					and data visualization</li>
+				<li>Automated daily company spend and growth reports</li>
+			</ul>
+		</div>
+		<div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+			<h class = 'job-title'>CS61B Academic Intern</h>
+			<h class = 'date'>08/2020 - 12/2020</h>
+			<ul class = 'experience-details'>
+				<li>Helped students write and debug code, understand concepts, and 
+					prepare for exams</li>
+				<li>Worked closely with professors and fellow interns to better student 
+					understanding and experience</li>
+			</ul>
+		</div>
+	</div>
+  </div>
+
+<div class="parallax3">
+	<element class = "parallax_text">
+		<p>
+			&emsp;coursework&emsp;
+		</p>
+	</element>
+</div>
+
+
+<script>
+	window.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const tabList = document.querySelector('[role="tablist"]');
+
+  // Add a click event handler to each tab
+  tabs.forEach(tab => {
+    tab.addEventListener("click", changeTabs);
+  });
+
+  // Enable arrow navigation between tabs in the tab list
+  let tabFocus = 0;
+
+  tabList.addEventListener("keydown", e => {
+    // Move right
+    if (e.keyCode === 39 || e.keyCode === 37) {
+      tabs[tabFocus].setAttribute("tabindex", -1);
+      if (e.keyCode === 39) {
+        tabFocus++;
+        // If we're at the end, go to the start
+        if (tabFocus >= tabs.length) {
+          tabFocus = 0;
+        }
+        // Move left
+      } else if (e.keyCode === 37) {
+        tabFocus--;
+        // If we're at the start, move to the end
+        if (tabFocus < 0) {
+          tabFocus = tabs.length - 1;
+        }
+      }
+
+      tabs[tabFocus].setAttribute("tabindex", 0);
+      tabs[tabFocus].focus();
+    }
+  });
+});
+
+function changeTabs(e) {
+	const target = e.target;
+  	const parent = target.parentNode;
+  	const grandparent = parent.parentNode;
+
+  	// Remove all current selected tabs
+  	parent
+	  .querySelectorAll('[aria-selected="true"]')
+	  .forEach(t => t.style.background = "transparent");
+	
+	
+	parent
+	  .querySelectorAll('[aria-selected="true"]')
+	  .forEach(t => t.style.borderLeftWidth = "1px");
+	
+	
+	parent
+	  .querySelectorAll('[aria-selected="true"]')
+	  .forEach(t => t.setAttribute("aria-selected", false));
+
+
+  	// Set this tab as selected
+  	target.setAttribute("aria-selected", true);
+  	target.style.background = "#1f2833";
+	target.style.borderLeftWidth = "5px";
+
+  	// Hide all tab panels
+  	grandparent
+	  .querySelectorAll('[role="tabpanel"]')
+	  .forEach(p => p.setAttribute("hidden", true));
+
+  	// Show the selected panel
+  	grandparent.parentNode
+	  .querySelector(`#${target.getAttribute("aria-controls")}`)
+	  .removeAttribute("hidden");
+}
+</script>
 
 </body>
 </html>
