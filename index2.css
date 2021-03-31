@@ -1,6 +1,66 @@
 body { 
-  background-color: #0b0c10  
+  background-color: #0b0c10;
+  padding-top: 10%;
 }
+
+*:focus {
+  outline: 0;
+}
+
+
+header {
+  background:#0b0c10;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 999;
+}
+
+
+div.header-links {
+  text-align: right;
+  margin-top: 3%;
+}
+
+button.resume {
+  color: #66fcf1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 75%;
+  margin-left: 1%;
+  margin-right: 3%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.resume:hover{
+  color: #87599B !important;
+}
+
+
+.nav-up {
+  top: -10%;
+}
+
+button.header-link {
+  color: #66fcf1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 75%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.header-link:hover{
+  color: #87599B !important;
+}
+
 
 
 h1 {
@@ -32,7 +92,7 @@ h3 {
 h2 {
 	color: #66fcf1;
 	font-size: 100%;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-left: 10%;
 	text-align: left;
 	line-height: 1.5;
@@ -47,6 +107,35 @@ p.intro {
   margin-left: 10%;
   font-family: 'Roboto', sans-serif;
 }
+
+div.socials {
+  color: #97999B;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+button.social-button {
+  background-color: transparent;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+button.social-button:hover {
+  color: #97999B;
+}
+
+a.social {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+
 
 body, html {
   height: 100%;
@@ -103,6 +192,40 @@ body, html {
   position: relative;
 }
 
+.parallax4 { 
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /* The image used */
+  background-image: url("bg-3.jpeg");
+
+  /* Full height */
+  height: 30%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax5 { 
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /* The image used */
+  background-image: url("bg-4.jpeg");
+
+  /* Full height */
+  height: 30%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .parallax_text > p {
   font-size: 300%;
   position: absolute;
@@ -128,7 +251,7 @@ div.tabs {
   margin-top: 5%;
   margin-left: 20%;
   margin-right: 30%;
-  margin-bottom: 50%;
+  margin-bottom: 45%;
   align-items: top;
 }
 
@@ -204,6 +327,178 @@ ul.experience-details {
   overflow-wrap: normal;
   font-family: 'Roboto', sans-serif;
   margin-top: 1%;
-  padding-left: 6%;
-  width:400px;
+  width: 400px;
+  list-style-type: none;
+}
+
+ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f004';
+  position: absolute;
+  margin:0 20% 0 -2.9%;
+}
+
+a.coursename {
+  color: #66fcf1;
+}
+a.visited {
+  color: #87599B;
+}
+a.coursename:hover {
+  color: #87599B;
+}
+
+div.projects {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50%;
+  position: relative;
+}
+
+div.project-folders {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+button.projects {
+  background-color: transparent; /* Blue background */
+  border: none; /* Remove borders */
+  color: #f5f5f5; /* White text */
+  font-size: 100%; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button.projects:hover {
+  color: #97999B;
+}
+
+button.back {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 100%;
+  float: left;
+  margin-left: 25%;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button.back:hover {
+  color: #97999B;
+}
+
+div.project-description {
+  color: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  background-color: #0b0c10;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 30%;
+}
+
+
+div.project-name {
+  color: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  margin-top: 5%;
+  padding-left: 40%;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+div.project-date {
+  color: #f5f5f5;
+  font-size: 100%;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 40%;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+a.project-link {
+  color: #66fcf1;
+}
+
+a.project-link:hover {
+  color: #87599B;
+}
+
+
+div.project-description-body {
+  color: #97999B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  padding-left: 40%;
+  text-align: left;
+}
+
+
+div.contact {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 20%;
+}
+
+div.contact-heading {
+  color: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 200%;
+  margin-bottom: 1%;
+}
+
+div.contact-body {
+  width: 25%;
+  margin: auto;
+  margin-bottom: 2%;
+  color: #97999B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+a.email-link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+a.email-link:hover {
+  color: #97999B;
+}
+
+a.email-link:visited {
+  color: #f5f5f5;
+}
+
+
+button.email {
+  color: #f5f5f5;
+  font-family: 'Roboto Mono', monospace;  
+  background-color: transparent;
+  border-radius: 12px;
+  border-style: solid;
+  cursor: pointer;
+  font-size: 125%;
+}
+
+button.email:hover {
+  color: #97999B;
+}
+
+footer {
+  color: #97999B;
+  font-family: 'Roboto Mono', sans-serif;
+  text-align: center;
+  font-size: 70%;
+  left:0;
+  padding-bottom: 2%;
+  width: 100%;
 }
