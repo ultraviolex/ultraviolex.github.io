@@ -7,6 +7,9 @@ body {
   outline: 0;
 }
 
+button{
+  -webkit-appearance: none;
+}
 
 header {
   background:#0b0c10;
