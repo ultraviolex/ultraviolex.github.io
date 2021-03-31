@@ -25,6 +25,7 @@ header {
 div.header-links {
   text-align: right;
   margin-top: 3%;
+  text-decoration: none;
 }
 
 button.resume {
@@ -58,10 +59,15 @@ button.header-link {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  text-decoration: none;
 }
 
 button.header-link:hover{
   color: #87599B !important;
+}
+
+a.header-link1 {
+  text-decoration: none;
 }
 
 
