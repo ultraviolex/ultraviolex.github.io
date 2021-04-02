@@ -115,6 +115,7 @@ p.intro {
   line-height: 2;
   margin-left: 10%;
   font-family: 'Roboto', sans-serif;
+  margin-right: 10%;
 }
 
 div.socials {
@@ -251,7 +252,7 @@ p.about-me {
   text-align: left;
   line-height: 2;
   margin-left: 10%;
-  margin-right: 3%;
+  margin-right: 10%;
   overflow-wrap: normal;
   font-family: 'Roboto', sans-serif;
 }
