@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ultraviolex.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/ultraviolex.github.io/static/js/main.6adc20a6.js",
+    "static/js/453.177959a8.chunk.js": "/ultraviolex.github.io/static/js/453.177959a8.chunk.js",
+    "index.html": "/ultraviolex.github.io/index.html",
+    "main.f855e6bc.css.map": "/ultraviolex.github.io/static/css/main.f855e6bc.css.map",
+    "main.6adc20a6.js.map": "/ultraviolex.github.io/static/js/main.6adc20a6.js.map",
+    "453.177959a8.chunk.js.map": "/ultraviolex.github.io/static/js/453.177959a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6adc20a6.js"
+  ]
+}
